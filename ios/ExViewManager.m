@@ -8,6 +8,7 @@
 
 #import "ExViewManager.h"
 #import "ExView.h"
+#import "ExShadowView.h"
 
 @implementation ExViewManager
 
@@ -16,6 +17,12 @@ RCT_EXPORT_MODULE(ExView)
 - (UIView *)view
 {
   return [ExView new];
+}
+
+- (RCTShadowView *)shadowView
+{
+  UIView *subview = self.view.subviews[0];
+  return [[ExShadowView alloc] initWithCGSize: subview.intrinsicContentSize];
 }
 
 @end

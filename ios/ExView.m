@@ -16,9 +16,10 @@
   if (self) {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     [button setTitle:@"Submit" forState:UIControlStateNormal];
-    [button sizeToFit];
+    button.titleLabel.font = [UIFont systemFontOfSize:24.0];
     button.backgroundColor = UIColor.redColor;
-    
+    [button sizeToFit];
+
     [self addSubview:button];
   }
   return self;

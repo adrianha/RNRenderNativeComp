@@ -26,7 +26,7 @@ export default class App extends Component<Props> {
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
-        <ExView />
+        <ExView style={{ marginVertical: 8 }} />
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
     );
@@ -48,6 +48,6 @@ const styles = StyleSheet.create({
   instructions: {
     textAlign: 'center',
     color: '#333333',
-    marginBottom: 5,
+    backgroundColor: 'green'
   },
 });

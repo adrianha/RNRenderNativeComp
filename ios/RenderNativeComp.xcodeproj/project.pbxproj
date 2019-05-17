@@ -40,6 +40,7 @@
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		DE41E783228E952900650E4B /* ExView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE41E782228E952900650E4B /* ExView.m */; };
 		DE41E786228E954C00650E4B /* ExViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE41E785228E954C00650E4B /* ExViewManager.m */; };
+		DE41E789228F045B00650E4B /* ExShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE41E788228F045B00650E4B /* ExShadowView.m */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
@@ -351,6 +352,8 @@
 		DE41E782228E952900650E4B /* ExView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExView.m; sourceTree = "<group>"; };
 		DE41E784228E954C00650E4B /* ExViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExViewManager.h; sourceTree = "<group>"; };
 		DE41E785228E954C00650E4B /* ExViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExViewManager.m; sourceTree = "<group>"; };
+		DE41E787228F045B00650E4B /* ExShadowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExShadowView.h; sourceTree = "<group>"; };
+		DE41E788228F045B00650E4B /* ExShadowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExShadowView.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -625,6 +628,8 @@
 				DE41E782228E952900650E4B /* ExView.m */,
 				DE41E784228E954C00650E4B /* ExViewManager.h */,
 				DE41E785228E954C00650E4B /* ExViewManager.m */,
+				DE41E787228F045B00650E4B /* ExShadowView.h */,
+				DE41E788228F045B00650E4B /* ExShadowView.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -1144,6 +1149,7 @@
 				DE41E786228E954C00650E4B /* ExViewManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				DE41E783228E952900650E4B /* ExView.m in Sources */,
+				DE41E789228F045B00650E4B /* ExShadowView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
