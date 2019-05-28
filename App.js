@@ -7,14 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, requireNativeComponent} from 'react-native';
-
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+import {StyleSheet, View, requireNativeComponent} from 'react-native';
 
 const ExView = requireNativeComponent('ExView')
 
@@ -23,11 +16,9 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-        <ExView style={{ marginVertical: 8 }} />
-        <Text style={styles.instructions}>{instructions}</Text>
+        <View style={{ height: 50, backgroundColor: 'blue' }} />
+        <ExView />
+        <View style={{ height: 50, backgroundColor: 'orange' }} />
       </View>
     );
   }
@@ -37,17 +28,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    backgroundColor: 'green'
   },
 });
