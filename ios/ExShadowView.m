@@ -8,15 +8,23 @@
 
 #import "ExShadowView.h"
 
+@interface ExShadowView()
+@property (assign) CGSize cgSize;
+@end
+
 @implementation ExShadowView
 
 - (instancetype)initWithCGSize:(CGSize)newCGSize
 {
   if ((self = [super init])) {
-    [self setIntrinsicContentSize:newCGSize];
+    self.cgSize = newCGSize;
   }
   
   return self;
+}
+
+- (CGSize)intrinsicContentSize {
+  return self.cgSize;
 }
 
 - (BOOL)canHaveSubviews

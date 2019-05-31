@@ -10,43 +10,35 @@
 
 @interface ExampleXIBView()
 
-@property (weak, nonatomic) IBOutlet UIView *contentView;
-
-
 @end
 
 @implementation ExampleXIBView
 
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder:coder];
-    if (self) {
-        [self setupView];
-    }
-    return self;
-}
-
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self setupView];
-    }
-    return self;
+- (instancetype)init {
+  self = [[[NSBundle mainBundle] loadNibNamed:@"ExampleXIB" owner:self options:nil] lastObject];
+  if (self) {
+    [self setupView];
+  }
+  return self;
 }
 
 - (void) setupView
 {
-    [[[NSBundle mainBundle] loadNibNamed:@"ExampleXIB" owner:self options:nil] lastObject];
-    [self addSubview:self.contentView];
+//    [[[NSBundle mainBundle] loadNibNamed:@"ExampleXIB" owner:self options:nil] lastObject];
+//    [self addSubview:x];
 
-    NSLayoutConstraint *contentHeightConstraint = [NSLayoutConstraint constraintWithItem:self.contentView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:50];
-    NSLayoutConstraint *contentLeadingConstraint = [NSLayoutConstraint constraintWithItem:self.contentView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeading multiplier:1.0 constant:16];
-    NSLayoutConstraint *contentTrailingConstraint = [NSLayoutConstraint constraintWithItem:self.contentView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:-16];
-
-    [self.contentView addConstraint:contentHeightConstraint];
-    [self addConstraint:contentLeadingConstraint];
-    [self addConstraint:contentTrailingConstraint];
+//  x.frame = CGRectMake(0.0, 0.0, 187.67, 180);
+//  for (UIView *view in x.subviews) {
+//    view.frame = x.frame;
+//  }
+  
+  
+//    NSLayoutConstraint *contentHeightConstraint = [NSLayoutConstraint constraintWithItem:self.contentView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:50];
+//    NSLayoutConstraint *contentLeadingConstraint = [NSLayoutConstraint constraintWithItem:x attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeading multiplier:1.0 constant:16];
+//    NSLayoutConstraint *contentTrailingConstraint = [NSLayoutConstraint constraintWithItem:x attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:-16];
+//  
+//  [self addConstraint:contentLeadingConstraint];
+//  [self addConstraint:contentTrailingConstraint];
 }
 
 @end
