@@ -20,16 +20,4 @@ RCT_EXPORT_MODULE(ExView)
   return xibView;
 }
 
-- (RCTShadowView *)shadowView
-{
-  CGSize size = CGSizeMake(CGRectGetWidth(self.view.frame) / 2.0f, CGRectGetHeight(self.view.frame));
-  return [[ExShadowView alloc] initWithCGSize: size];
-}
-
-- (CGSize)sizeThatFitsMinimumSize:(CGSize)minimumSize
-                      maximumSize:(CGSize)maximumSize {
-  CGSize size = CGSizeMake(CGRectGetWidth(self.view.frame) / 2.0f, CGRectGetHeight(self.view.frame));
-  return size;
-}
-
 @end
