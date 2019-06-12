@@ -18,13 +18,10 @@
 {
   if ((self = [super init])) {
     self.cgSize = newCGSize;
+    [self setIntrinsicContentSize:newCGSize];
   }
   
   return self;
-}
-
-- (CGSize)intrinsicContentSize {
-  return self.cgSize;
 }
 
 - (BOOL)canHaveSubviews

@@ -20,4 +20,9 @@ RCT_EXPORT_MODULE(ExView)
   return xibView;
 }
 
+- (RCTShadowView *)shadowView
+{
+  return [[ExShadowView alloc] initWithCGSize:self.view.frame.size];
+}
+
 @end
