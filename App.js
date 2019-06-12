@@ -17,10 +17,7 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <View style={{ height: 50, backgroundColor: 'blue' }} />
-        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-          <ExView style={{ flex: 1 }} />
-          <ExView style={{ flex: 1 }} />
-        </View>
+        <ExView />
         <View style={{ height: 50, backgroundColor: 'orange' }} />
       </View>
     );
