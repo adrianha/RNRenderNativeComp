@@ -16,14 +16,15 @@ RCT_EXPORT_MODULE(ExView)
 
 - (UIView *)view
 {
-  ExampleXIBView *xibView = [ExampleXIBView new];
-  return xibView;
+  ExampleXIBView *xib = [ExampleXIBView new];
+  [xib.view setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin];
+  return xib.view;
 }
 
 - (RCTShadowView *)shadowView
 {
-  UIView *subview = self.view.subviews[0];
-  return [[ExShadowView alloc] initWithCGSize: subview.frame.size];
+ UIView *subview = self.view;
+ return [[ExShadowView alloc] initWithCGSize: subview.frame.size];
 }
 
 @end

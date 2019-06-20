@@ -12,44 +12,38 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExampleXIBView">
             <connections>
-                <outlet property="contentView" destination="iAa-8e-3Wo" id="lOc-e4-NDV"/>
+                <outlet property="view" destination="iN0-l3-epB" id="bgU-YD-skx"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="RootView">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+        <view contentMode="center" id="iN0-l3-epB" userLabel="RootView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAa-8e-3Wo">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAa-8e-3Wo">
+                    <rect key="frame" x="8" y="0.0" width="359" height="211"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP7-VX-Afp">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                            <color key="backgroundColor" red="0.52549019610000003" green="0.4039215686" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAt-du-sAG">
+                            <rect key="frame" x="158" y="95" width="42" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.87843137250000003" green="0.8980392157" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="8xd-rf-jPD"/>
-                        <constraint firstAttribute="trailing" secondItem="MP7-VX-Afp" secondAttribute="trailing" id="Tiz-sJ-Nrd"/>
-                        <constraint firstAttribute="bottom" secondItem="MP7-VX-Afp" secondAttribute="bottom" id="UFi-3L-w2w"/>
-                        <constraint firstItem="MP7-VX-Afp" firstAttribute="leading" secondItem="iAa-8e-3Wo" secondAttribute="leading" id="Wfz-fW-cVk"/>
-                        <constraint firstItem="MP7-VX-Afp" firstAttribute="top" secondItem="iAa-8e-3Wo" secondAttribute="top" id="rJj-re-pfc"/>
-                    </constraints>
+                    <color key="backgroundColor" red="0.35261708930000002" green="1" blue="0.27705804919999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.98424340165128577" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="iAa-8e-3Wo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FDJ-fn-byb"/>
-                <constraint firstItem="iAa-8e-3Wo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IZH-Zb-eq1"/>
-                <constraint firstAttribute="trailing" secondItem="iAa-8e-3Wo" secondAttribute="trailing" id="pvL-Be-lqy"/>
+                <constraint firstItem="iAa-8e-3Wo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="DxN-xG-Kxo"/>
+                <constraint firstAttribute="trailing" secondItem="iAa-8e-3Wo" secondAttribute="trailing" constant="8" id="ZW3-7T-2PP"/>
+                <constraint firstItem="iAa-8e-3Wo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fzO-Jd-vsQ"/>
+                <constraint firstAttribute="bottom" secondItem="iAa-8e-3Wo" secondAttribute="bottom" id="pco-ok-KS1"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="48.550724637681164" y="34.821428571428569"/>
+            <viewLayoutGuide key="safeArea" id="pzl-oF-3DZ"/>
+            <point key="canvasLocation" x="48.550724637681164" y="-19.084821428571427"/>
         </view>
     </objects>
 </document>

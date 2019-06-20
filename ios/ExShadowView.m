@@ -19,14 +19,4 @@
   return self;
 }
 
-- (BOOL)canHaveSubviews
-{
-  return NO;
-}
-
-- (BOOL)isYogaLeafNode
-{
-  return YES;
-}
-
 @end
