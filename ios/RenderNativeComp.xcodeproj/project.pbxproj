@@ -38,6 +38,7 @@
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		DE0DA9CF22BB895E009EE5AA /* SpecialRequestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0DA9CE22BB895E009EE5AA /* SpecialRequestView.xib */; };
 		DE41E783228E952900650E4B /* ExView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE41E782228E952900650E4B /* ExView.m */; };
 		DE41E786228E954C00650E4B /* ExViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE41E785228E954C00650E4B /* ExViewManager.m */; };
 		DE41E789228F045B00650E4B /* ExShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE41E788228F045B00650E4B /* ExShadowView.m */; };
@@ -350,6 +351,7 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		DE0DA9CE22BB895E009EE5AA /* SpecialRequestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialRequestView.xib; sourceTree = "<group>"; };
 		DE41E781228E952900650E4B /* ExView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExView.h; sourceTree = "<group>"; };
 		DE41E782228E952900650E4B /* ExView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExView.m; sourceTree = "<group>"; };
 		DE41E784228E954C00650E4B /* ExViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExViewManager.h; sourceTree = "<group>"; };
@@ -638,6 +640,7 @@
 				DEF3DB4B229BAD5900CEA0DF /* ExampleXIBView.h */,
 				DEF3DB4C229BAD5900CEA0DF /* ExampleXIBView.m */,
 				DEF28537229CE23000CA1F58 /* ExampleXIB.xib */,
+				DE0DA9CE22BB895E009EE5AA /* SpecialRequestView.xib */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -1087,6 +1090,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0DA9CF22BB895E009EE5AA /* SpecialRequestView.xib in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				DEF28538229CE23000CA1F58 /* ExampleXIB.xib in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,

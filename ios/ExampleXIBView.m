@@ -9,7 +9,7 @@
 #import "ExampleXIBView.h"
 
 @interface ExampleXIBView()
-
+@property (weak, nonatomic) IBOutlet UIButton *buttonSubmit;
 @end
 
 @implementation ExampleXIBView
@@ -20,6 +20,9 @@
     [self setupView];
   }
   return self;
+}
+- (IBAction)onPress:(id)sender {
+    
 }
 
 - (void) setupView
