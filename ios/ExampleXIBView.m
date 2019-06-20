@@ -14,6 +14,9 @@
 @end
 
 @implementation ExampleXIBView
+- (IBAction)onPress:(id)sender {
+  
+}
 
 - (instancetype)init {
   self = [super initWithNibName:@"ExampleXIB" bundle:nil];

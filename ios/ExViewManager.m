@@ -17,7 +17,7 @@ RCT_EXPORT_MODULE(ExView)
 - (UIView *)view
 {
   ExampleXIBView *xib = [ExampleXIBView new];
-  [xib.view setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin];
+//  [xib.view setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin];
   return xib.view;
 }
 
