@@ -1,8 +1,8 @@
 //
-//  ExView.h
+//  ExampleXIBView.h
 //  RenderNativeComp
 //
-//  Created by adrian.hartanto on 17/05/19.
+//  Created by adrian.hartanto on 27/05/19.
 //  Copyright © 2019 Facebook. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ExView : UIView
+@interface ExampleXIBView : UIViewController
 
 @end
 

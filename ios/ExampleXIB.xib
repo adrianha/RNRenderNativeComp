@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExampleXIBView">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="bgU-YD-skx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="center" id="iN0-l3-epB" userLabel="RootView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAa-8e-3Wo">
+                    <rect key="frame" x="8" y="0.0" width="359" height="211"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKy-6X-r5e">
+                            <rect key="frame" x="156" y="90" width="46" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="onPress:" destination="-1" eventType="touchUpInside" id="Wah-Qn-E6d"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.35261708930000002" green="1" blue="0.27705804919999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.98424340165128577" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="iAa-8e-3Wo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="DxN-xG-Kxo"/>
+                <constraint firstAttribute="trailing" secondItem="iAa-8e-3Wo" secondAttribute="trailing" constant="8" id="ZW3-7T-2PP"/>
+                <constraint firstItem="iAa-8e-3Wo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fzO-Jd-vsQ"/>
+                <constraint firstAttribute="bottom" secondItem="iAa-8e-3Wo" secondAttribute="bottom" id="pco-ok-KS1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="pzl-oF-3DZ"/>
+            <point key="canvasLocation" x="48.550724637681164" y="-19.084821428571427"/>
+        </view>
+    </objects>
+</document>
