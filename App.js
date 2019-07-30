@@ -11,7 +11,7 @@ import {StyleSheet, View, requireNativeComponent} from 'react-native';
 
 const ExViewNative = requireNativeComponent('ExView');
 
-const ExView = ({style, ...props}) => {
+const ExView = ({ style, ...props }) => {
   return (
     <View style={style} >
       <ExViewNative {...props} />
@@ -25,9 +25,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <View style={{ height: 50, backgroundColor: 'blue' }} />
-        <View style={{flexDirection: 'row'}}>
-          <ExView style={{flex: 1}} />
-        </View>
+        <ExView style={{ height: 50 }} />
         <View style={{ height: 50, backgroundColor: 'orange' }} />
       </View>
     );

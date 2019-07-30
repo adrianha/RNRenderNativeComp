@@ -10,21 +10,25 @@
 #import "ExShadowView.h"
 #import "ExampleXIBView.h"
 
+@interface ExViewManager()
+@property (strong, nonatomic) UIViewController *exampleVC;
+@end
+
 @implementation ExViewManager
 
 RCT_EXPORT_MODULE(ExView)
 
 - (UIView *)view
 {
-  ExampleXIBView *xib = [ExampleXIBView new];
-//  [xib.view setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin];
-  return xib.view;
+  _exampleVC = [ExampleXIBView new];
+  [_exampleVC.view setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin];
+  return _exampleVC.view;
 }
 
 - (RCTShadowView *)shadowView
 {
- UIView *subview = self.view;
- return [[ExShadowView alloc] initWithCGSize: subview.frame.size];
+ UIView *view = self.view;
+ return [[ExShadowView alloc] initWithCGSize: CGSizeMake(CGRectGetWidth(view.bounds), CGRectGetHeight(view.bounds))];
 }
 
 @end
