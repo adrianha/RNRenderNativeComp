@@ -9,9 +9,11 @@
 #import "ExViewManager.h"
 #import "ExShadowView.h"
 #import "ExampleXIBView.h"
+#import "ExampleXIBViewWrapper.h"
 
 @interface ExViewManager()
 @property (strong, nonatomic) UIViewController *exampleVC;
+@property (strong, nonatomic) ExampleXIBViewWrapper *wrapper;
 @end
 
 @implementation ExViewManager
@@ -23,6 +25,9 @@ RCT_EXPORT_MODULE(ExView)
   _exampleVC = [ExampleXIBView new];
   [_exampleVC.view setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin];
   return _exampleVC.view;
+//  self.wrapper = [[ExampleXIBViewWrapper alloc] init];
+//  [self.wrapper.viewController.view setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin];
+//  return self.wrapper;
 }
 
 - (RCTShadowView *)shadowView

@@ -16,7 +16,7 @@
 @implementation ExampleXIBView
 - (IBAction)onButtonPress:(id)sender {
     _modalVC = [ExModalViewController new];
-    [self presentViewController:_modalVC animated:YES completion:nil];
+    [self.view.window.rootViewController presentViewController:_modalVC animated:YES completion:nil];
 }
 
 - (instancetype)init {
