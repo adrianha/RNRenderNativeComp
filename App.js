@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {StyleSheet, View, requireNativeComponent} from 'react-native';
+import {StyleSheet, SafeAreaView, View, requireNativeComponent} from 'react-native';
 
 const ExViewNative = requireNativeComponent('ExView');
 
@@ -23,11 +23,11 @@ const ExView = ({ style, ...props }) => {
 export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <View style={{ height: 50, backgroundColor: 'blue' }} />
-        <ExView style={{ height: 50 }} />
+        <ExView/>
         <View style={{ height: 50, backgroundColor: 'orange' }} />
-      </View>
+      </SafeAreaView>
     );
   }
 }
